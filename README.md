@@ -41,7 +41,7 @@ The sensor rotates from 0° to 180° and measures distance to nearby objects, vi
 ## 🎥 Demo Video
 
 Watch the live working demonstration here:  
-👉 **https://youtube.com/shorts/izTVSuXe0UE?si=S3Rz2kS1nIQ-uGib**
+---https://youtube.com/shorts/TroUSUrAjIA?si=3YRBiAM_ZDm3xQDZ
 
 ---
 
@@ -79,6 +79,7 @@ Zeal College, Pune University
 - README (this file)
 
 ---
+
 
 
 
