@@ -1,62 +1,85 @@
-# Ultrasonic Radar System using Arduino
+# Radar Using Ultrasonic Sensor & Arduino
 
-A real-time ultrasonic radar system built using Arduino, HC-SR04 ultrasonic sensor and a servo motor.  
-The radar scans the environment in a 180° range and displays object distance on a Processing IDE GUI.
-
----
-
-## 📌 Project Overview
-
-This project visualizes distance readings from an ultrasonic sensor in the form of a radar sweep.  
-A servo motor rotates the sensor, and the Processing interface renders a live radar display using serial data sent from the Arduino.
-
-This project demonstrates embedded systems fundamentals, serial communication, and hardware–software integration.
+This project implements a simple radar system using an ultrasonic sensor mounted on a servo motor.  
+The sensor rotates from 0° to 180° and measures distance to nearby objects, visualized using a Processing-based radar GUI.
 
 ---
 
-## 🛠️ Components Used
+## 📦 Components Used
 
-- **Arduino Uno**
-- **HC-SR04 Ultrasonic Sensor**
-- **SG90 Servo Motor**
-- **Jumper Wires**
-- **Breadboard**
-- **USB Cable (Arduino Upload)**
-
----
-
-## ⚙️ Working Principle
-
-1. The servo rotates from **0° to 180°** and back.  
-2. At each angle, the HC-SR04 sensor measures distance using ultrasonic pulses.  
-3. Arduino sends the angle + distance to the PC via Serial communication.  
-4. The Processing sketch reads the data and draws a real-time radar visualization.
-
-This creates a scanning radar effect similar to actual radar systems.
+- Arduino UNO  
+- Ultrasonic Sensor (HC-SR04)  
+- Servo Motor (SG90)  
+- Jumper Wires  
+- Breadboard  
+- USB Cable  
+- Laptop / PC  
 
 ---
 
-## 🔧 Arduino Code
+## ⚡ Circuit Connections
 
-The Arduino sketch:
-- Controls the servo motor sweep  
-- Reads distance from HC-SR04  
-- Sends JSON-like data packets to Processing  
+- **HC-SR04 Trigger** → D9  
+- **HC-SR04 Echo** → D10  
+- **Servo Motor** → D11  
+- **VCC** → 5V  
+- **GND** → GND  
 
-📁 **Location:** `Arduino/Ultrasonic_Radar.ino`
+---
+
+## 🛠 How to Use
+
+1. Open `code.ino` in the Arduino IDE and upload it to the Arduino UNO.  
+2. Open `radar_processing_pde.pde` in the Processing IDE.  
+3. Select the correct COM port in Arduino and Processing.  
+4. Confirm serial data at **9600 baud** in Arduino Serial Monitor.  
+5. Run the Processing sketch to view the radar GUI.  
+6. Mount the ultrasonic sensor on the servo and observe the radar sweep.
 
 ---
 
-## 💻 Processing IDE Code
+## 🎥 Demo Video
 
-The Processing sketch:
-- Receives serial data from Arduino  
-- Draws a radar arc  
-- Displays object distance visually in real time  
-
-📁 **Location:** `Processing/Radar_Processing.pde`
+Watch the live working demonstration here:  
+👉 **https://youtube.com/shorts/izTVSuXe0UE?si=S3Rz2kS1nIQ-uGib**
 
 ---
+
+## 📊 Applications
+
+- Object detection  
+- Basic security systems  
+- Robotics and automation  
+- Distance measurement  
+- Educational electronics projects  
+
+---
+
+## 🚀 Future Improvements
+
+- Improve radar GUI (colors, labels, arcs, distance markers)  
+- Add buzzer alert for close objects  
+- Add OLED / LCD display for angle & distance  
+- Add real-time data logging  
+
+---
+
+## 👤 Author
+
+**Hemant Shelar**  
+Electronics & Telecommunication Engineering  
+Zeal College, Pune University  
+
+---
+
+## 📁 Project Files Included
+
+- `code.ino` — Arduino code  
+- `radar_processing_pde.pde` — Processing radar visualization code  
+- README (this file)
+
+---
+
 
 
 
